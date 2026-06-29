@@ -25,7 +25,7 @@ Yogurt The Horse와 kiberptah가 제작한 인디 게임인 'Taos Research Proje
 ---
 
 ## 실행 방법
-1. 저장소 클론: `git clone [https://github.com/hellotomato12/anomaly-scan-game-cli.git](https://github.com/hellotomato12/anomaly-scan-game-cli.git)`
+1. 저장소 클론: `git clone https://github.com/hellotomato12/anomaly-scan-game-cli.git`
 2. `main.c` 컴파일 후 실행
 
 ---
