@@ -8,7 +8,7 @@ Yogurt The Horse와 kiberptah가 제작한 인디 게임인 'Taos Research Proje
 - **개발 기간:** 2026년 5월 12일 - 6월 8일 (대학 텀 프로젝트)
 - **개발 언어:** C
 - **개발 환경:** Visual Studio
-- **원작 출처:** [Taos Research Project](https://yogurtthehorse.itch.io/signal)
+- **원작 출처:** <a href="https://yogurtthehorse.itch.io/signal" target="_blank">Taos Research Project</a>
 
 ---
 
