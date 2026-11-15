@@ -28,7 +28,3 @@ Yogurt The Horse와 kiberptah가 제작한 인디 게임인 'Taos Research Proje
 - 저장소 클론: `git clone https://github.com/hellotomato12/anomaly-scan-game-cli.git`
 
 ---
-
-## 이슈
-- 안테나가 시간이 지나 사라져도 TAB 키로 안테나 선택 시 이미 없어진 안테나의 위치로 이동하는 현상 발생
-- 안테나 선택 시 존재하는 안테나일 경우 선택하고, 없을 시 다음 안테나를 확인하는 방식으로 수정할 예정
