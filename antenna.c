@@ -208,22 +208,24 @@ void moveSelectedAntenna() {
 
 // 다른 안테나 선택
 void changeSelectedAntenna() {
-	static int idx;
+	int idx;
 
-	if (selectedAntenna == NULL) idx = atn_q.front;
+	if (atn_q.front == atn_q.rear) return;		// 안테나가 없으면 아무것도 안 함
 
-	if (atn_q.front != atn_q.rear) {
-		if (idx != atn_q.rear) {
-			idx++;
-		}
-		else {
-			idx = atn_q.front + 1;
-		}
-		selectedAntenna = &atn_q.antenna[idx];
-		cameraX = selectedAntenna->x;
-		cameraY = selectedAntenna->y;
-		antennaEditMode = 1;
-	}
+	if (selectedAntenna == NULL)
+		idx = atn_q.front;
+	else
+		idx = (int)(selectedAntenna - atn_q.antenna);		// 현재 선택된 슬롯 번호
+
+	if (idx == atn_q.rear)
+		idx = (atn_q.front + 1) % MAX_ANTENNAS;
+	else
+		idx = (idx + 1) % MAX_ANTENNAS;
+
+	selectedAntenna = &atn_q.antenna[idx];
+	cameraX = selectedAntenna->x;
+	cameraY = selectedAntenna->y;
+	antennaEditMode = 1;
 }
 
 
